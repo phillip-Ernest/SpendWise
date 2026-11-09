@@ -1,199 +1,195 @@
-# SpendWise – Personal Expense Tracker
+
+# SpendWise - Personal Expense Tracker
 
 ## 1. Project Overview
 
-SpendWise is a personal financial management application developed using HTML, CSS and JavaScript.
+SpendWise is a personal expense tracking web application developed using HTML5, CSS3 and JavaScript.
 
-The application helps users manage their finances by recording income and expenses, organising transactions into categories, calculating total income, calculating expenses and displaying the remaining balance.
+The application helps users record, manage and monitor their daily income and expenses. It provides a simple and user-friendly interface for tracking financial activities and calculating available balances.
 
-The main purpose of SpendWise is to help users monitor their spending habits and make better financial decisions.
+The main purpose of SpendWise is to encourage better financial management and budgeting habits.
 
-## 2. Project Objectives
+## 2. Live Application
 
-The objectives of SpendWise are:
+**Netlify Website:**
 
-- To record personal income.
-- To record daily expenses.
-- To organise transactions into categories.
-- To calculate total income and expenses automatically.
-- To display the remaining financial balance.
-- To store transaction records using browser Local Storage.
-- To provide a simple and responsive user interface.
+https://spendwise-dashbaord.netlify.app/
 
-## 3. Technologies Used
+**GitHub Repository:**
 
-The project uses the following technologies:
+https://github.com/phillip-Ernest/SpendWise
 
-- **HTML5:** Creates the structure and content of the application.
-- **CSS3:** Provides styling, colours, layouts and responsive design.
-- **JavaScript:** Implements calculations, functions and user interactions.
-- **Browser Local Storage:** Saves transaction records so that they remain available after refreshing the browser.
+## 3. Project Features
 
-## 4. JavaScript Concepts Implemented
+SpendWise provides the following features:
 
-### A. Variables
-
-Variables are used to store information required by the application.
-
-Examples include:
-
-- `transactions` stores all transaction records.
-- `totalIncome` stores the total income.
-- `totalExpenses` stores the total expenses.
-- `balance` stores the remaining amount.
-
-The `let` keyword is used for variables whose values can change, while `const` is used for references that are not reassigned.
-
-### B. Arrays
-
-An array is used to store multiple transaction records.
-
-Example:
-
-`let transactions = [];`
-
-Each new income or expense transaction is added to the transactions array.
-
-### C. Objects
-
-Objects are used to represent individual transactions.
-
-Each transaction contains:
-
-- ID
-- Description
-- Amount
-- Transaction type
-- Category
-- Date
-
-### D. User Input
-
-HTML forms collect information from users, including the transaction description, amount, type, category and date.
-
-JavaScript retrieves the information using DOM methods such as `document.getElementById()`.
-
-The application validates the information before adding a transaction.
-
-### E. Conditional Statements
-
-Conditional statements are used to distinguish income from expenses.
-
-For example:
-
-`if (transaction.type === "income")`
-
-Income is added to the total income, while expenses are added to total expenses.
-
-### F. Loops
-
-The `forEach()` method processes the transactions array.
-
-It is used to calculate financial totals and display transaction records.
-
-### G. Functions
-
-Functions organise the application code into smaller tasks.
-
-The main functions include:
-
-- `saveTransactions()` – Saves transactions in Local Storage.
-- `calculateTotals()` – Calculates total income, expenses and balance.
-- `displayTransactions()` – Displays transaction records.
-- `addTransaction()` – Adds new transactions.
-
-### H. DOM Manipulation
-
-DOM manipulation allows JavaScript to update the HTML page.
-
-For example, the application updates the total income, total expenses, balance and transaction history without reloading the page.
-
-### I. Event Listeners
-
-The application uses an event listener to detect when a user submits the transaction form.
-
-Example:
-
-`transactionForm.addEventListener("submit", addTransaction);`
-
-### J. Local Storage
-
-Local Storage is used to save transaction information in the browser.
-
-The `JSON.stringify()` method converts the transaction array into a string for storage, while `JSON.parse()` retrieves and converts the stored information back into JavaScript data.
-
-## 5. How Calculations Are Performed
-
-SpendWise automatically calculates the financial totals whenever a transaction is added.
-
-The calculations are:
-
-**Total Income:** Sum of all income transactions.
-
-**Total Expenses:** Sum of all expense transactions.
-
-**Remaining Balance:**
-
-`Balance = Total Income - Total Expenses`
-
-For example:
-
-- Total Income = KSh 50,000
-- Total Expenses = KSh 7,000
-- Remaining Balance = KSh 43,000
-
-## 6. How Functions Organise the Code
-
-Functions make the application easier to understand, maintain and update.
-
-Each function performs a specific task:
-
-1. `addTransaction()` collects and processes user input.
-2. `calculateTotals()` performs financial calculations.
-3. `displayTransactions()` displays transaction information.
-4. `saveTransactions()` stores data in Local Storage.
-
-## 7. Application Features
-
-- Add income transactions.
-- Add expense transactions.
-- Categorise transactions.
-- Record transaction dates.
-- Calculate financial totals automatically.
-- Display transaction history.
-- Save transaction records in Local Storage.
+- Add new income transactions.
+- Record daily expenses.
+- Categorize financial transactions.
+- Display total income.
+- Display total expenses.
+- Calculate the available balance.
+- View transaction history.
+- Store transactions using browser Local Storage.
+- Preserve saved transactions after refreshing the page.
 - Responsive user interface.
 
-## 8. How to Run the Application
+## 4. Technologies Used
 
-1. Download or clone the SpendWise GitHub repository.
-2. Open the project folder in Visual Studio Code.
-3. Ensure all four project files are available.
-4. Run a local server using:
+The project was developed using the following technologies:
 
-`python -m http.server 8000`
+### HTML5
+Used to create the structure and content of the application, including forms, transaction sections and summary cards.
 
-5. Open a browser and visit:
+### CSS3
+Used to style the application, improve its appearance and provide a responsive user interface.
 
-`http://localhost:8000`
+### JavaScript
+Used to implement the application functionality, including:
 
-## 9. Project Structure
+- DOM manipulation.
+- Event handling.
+- Functions.
+- Arrays and objects.
+- Input validation.
+- Calculations.
+- Local Storage.
+- Dynamic updates without reloading the page.
 
-    SPENDWISE/
-    |
-    |-- index.html
-    |-- style.css
-    |-- script.js
-    |-- README.md
+### Git and GitHub
+Used for version control, source code management and hosting the project repository.
 
-## 10. Conclusion
+### Netlify
+Used to deploy the application and make it accessible online.
 
-SpendWise demonstrates the practical application of HTML, CSS and JavaScript in developing a personal expense management system.
+## 5. Project Structure
 
-The project provides practical experience in variables, arrays, objects, functions, conditional statements, loops, DOM manipulation, event listeners and Local Storage.
+The project contains the following files:
 
-## 11. Author
+```text
+SpendWise/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-**Phillip Ernest**
+### File Descriptions
 
-Project: SpendWise – Personal Expense Tracker
+- **index.html:** Contains the structure of the application.
+- **style.css:** Contains the styling and layout.
+- **script.js:** Contains the application logic and functionality.
+- **README.md:** Provides project documentation and instructions.
+
+## 6. How to Run the Project Locally
+
+Follow these steps to run SpendWise on your computer:
+
+1. Install Visual Studio Code.
+2. Clone or download the SpendWise GitHub repository.
+3. Open the SpendWise project folder in Visual Studio Code.
+4. Locate the index.html file.
+5. Open index.html in your web browser.
+6. Start recording your income and expenses.
+
+Alternatively, use the VS Code Live Server extension to run the application locally.
+
+## 7. Deployment Process
+
+SpendWise was deployed online using GitHub and Netlify.
+
+The deployment process involved the following steps:
+
+1. Created a GitHub repository named SpendWise.
+2. Initialised Git in the local project folder.
+3. Added and committed the project files.
+4. Pushed the project files to GitHub.
+5. Made the GitHub repository public.
+6. Created a Netlify account and signed in using GitHub.
+7. Connected the SpendWise GitHub repository to Netlify.
+8. Selected the main branch for deployment.
+9. Configured the project root as the publish directory.
+10. Deployed the application using Netlify.
+11. Tested the deployed website to confirm that it was accessible.
+
+## 8. Challenges Faced During Deployment
+
+During the development and deployment of SpendWise, I encountered several challenges.
+
+### Challenge 1: Connecting GitHub to Netlify
+
+I needed to connect my GitHub repository to Netlify and authorize access to the project.
+
+**Solution:** I signed in to Netlify using GitHub and authorized the repository connection.
+
+### Challenge 2: Deployment Configuration
+
+I needed to configure the correct deployment branch and publish directory.
+
+**Solution:** I selected the main branch and used the project root directory as the publish directory.
+
+### Challenge 3: HTML Formatting
+
+I identified unnecessary backticks in the HTML file during the review process.
+
+**Solution:** I corrected the HTML formatting to ensure that the browser interprets the document as normal HTML markup.
+
+### Challenge 4: Verifying the Deployment
+
+I needed to confirm that the deployed application was accessible and that its features worked correctly.
+
+**Solution:** I opened the Netlify website and tested the application functionality.
+
+## 9. Testing
+
+The application was tested to confirm that its main features work correctly.
+
+The following areas were checked:
+
+- Adding income transactions.
+- Adding expense transactions.
+- Calculating total income.
+- Calculating total expenses.
+- Updating the available balance.
+- Displaying transaction history.
+- Saving transactions in Local Storage.
+- Retaining saved transactions after refreshing the page.
+
+## 10. Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Building websites using HTML5.
+- Styling applications using CSS3.
+- Implementing interactive features with JavaScript.
+- Manipulating the DOM.
+- Handling user input and form submissions.
+- Working with browser Local Storage.
+- Using Git and GitHub for version control.
+- Deploying websites using Netlify.
+- Troubleshooting and correcting deployment issues.
+
+## 11. Conclusion
+
+SpendWise demonstrates the practical application of HTML, CSS and JavaScript in developing a personal expense tracking application.
+
+The project provides a simple way to record income, manage expenses and monitor financial balances.
+
+The application was uploaded to a public GitHub repository and deployed using Netlify, making it accessible online.
+
+**Live Website:** https://spendwise-dashbaord.netlify.app/
+
+**GitHub Repository:** https://github.com/phillip-Ernest/SpendWise
+
+---
+
+**Project Name:** SpendWise
+
+**Project Type:** Personal Expense Tracker
+
+**Developer:** Phillip Ernest
+
+**Technologies:** HTML5, CSS3 and JavaScript
+
+**Deployment Platform:** Netlify
